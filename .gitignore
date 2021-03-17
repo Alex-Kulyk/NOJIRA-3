@@ -1,9 +1,10 @@
 # Ignore binaries.
 /bin
 
-
+.DS_Store
 .idea/
 docker-compose.yml
 docroot/sites/*/settings.local.php
 docroot/sites/*/files
+
 
