@@ -1,6 +1,7 @@
 # Ignore binaries.
 /bin
 
+.vscode
 .DS_Store
 .idea/
 docker-compose.yml

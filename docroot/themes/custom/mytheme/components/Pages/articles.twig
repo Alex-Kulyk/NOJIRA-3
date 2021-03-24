@@ -1,0 +1,54 @@
+{% extends '../Layouts/layout.twig' %}
+{% block meta %}
+  {{ parent() }}
+{% endblock %}
+{% block title %}
+  Article page
+{% endblock %}
+
+{% set articles = [
+  {
+    title: 'The Dark is Rising',
+    image_path: '../src/Assets/book12.jpg',
+    description: 'A perennial favorite of both elementary',
+    link: 'https://www.ex1.com',
+    author: 'Susan Cooper',
+    type: 'book'
+  },
+  {
+    title: 'The Princess Bride',
+    image_path: '../src/Assets/book2.jpg',
+    description: 'Lorem ipsum dolor sit amet.',
+    link: 'https://www.ex2.com',
+    author: 'William Goldman',
+    type: 'school'
+  },
+  {
+    title: 'A Midsummer Tempest',
+    image_path: '../src/Assets/book3.jpg',
+    description: 'Lorem ipsum dolor sit amet consectetur.',
+    link: 'https://www.ex3.com',
+    author: 'Poul Anderson',
+    type: 'Lecture'
+  },
+  {
+    title: 'The Sword of Shannara',
+    image_path: '../src/Assets/book4.jpg',
+    description: 'Lorem, ipsum dolor sit amet consectetur',
+    link: 'https://www.ex4.com',
+    author: 'Terry Brooks',
+    type: 'Study'
+  },
+  {
+    title: 'Kindred',
+    image_path: '../src/Assets/book5.jpg',
+    description: 'A perennial favorite of both elementary',
+    link: 'https://www.ex5.com',
+    author: 'Octavia Butler',
+    type: 'University'
+  }
+] %}
+
+{% block content %}
+  {% include '../Blocks/articles.twig' %}
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends '../Layouts/layout.twig' %}
+{% block title %}
+  index page
+{% endblock %}
+
+{% set firstArticle = [
+  {
+    title: 'The Dark is Rising',
+    image_path: '../src/Assets/book12.jpg',
+    description: 'A perennial favorite of both elementary',
+    link: 'https://www.ex1.com',
+    author: 'Susan Cooper',
+    type: 'book'
+  }
+] %}
+
+{% set thirdBlog = [
+  {
+    title: 'Avoid HUMAN Burnout',
+    image_path: '../src/Assets/pexels3.jpg',
+    description: 'Lorem ipsum dolor sit amet consectetur.',
+    link: 'https://www.ex3.com',
+    author: 'CYRIL NUNEZ',
+    type: 'Lecture'
+  }
+] %}
+
+{% block content %}
+  {% include '../blocks/articles.twig' with {
+    articles: firstArticle
+  } only %}
+  {% include '../blocks/blogs.twig' with {
+    blogs: thirdBlog
+  } only %}
+{% endblock %}

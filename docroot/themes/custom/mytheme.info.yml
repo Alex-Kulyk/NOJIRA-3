@@ -7,13 +7,11 @@ core: 8.x
 screenshot: drupal8.png
 libraries:
   - mytheme/global-styling
-    
+
 regions:
   header: Header
-  primary_menu: 'Primary menu'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
   content: Content
-  sidebar_first: 'Sidebar first'
-  featured_bottom_first: 'Featured bottom first'
-  footer_first: 'Footer first'
+  footer_first: Footer First
+  footer_second: Footer Second
+  page_top: Page top
+  page_bottom: Page bottom

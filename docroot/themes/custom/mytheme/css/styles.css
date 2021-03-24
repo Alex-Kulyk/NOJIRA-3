@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  color: #0c7474;
+}
+
+h1 {
+  color: #616161;
+}
+
+#header {
+  background-color: rgb(54, 35, 35);
+  background-image: none;
+}
+
+.site-footer {
+  background-color: brown;
+}
+
+.asteri {
+  display: flex;
+  flex-direction: column;
+}
+.asteri2 {
+  display: flex;
+  flex-direction: row;
+}

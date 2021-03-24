@@ -1,0 +1,9 @@
+ {% include directory ~ "/mytheme/components/Blocks/card.twig" with {
+    title: title_suffix.rdf_meta_title["#metadata"].0.content,
+    image_path: content.field_image,
+    description: content.body,
+    author: author_name,
+    type: content.field_type,
+    link: content.links
+  } only %}
+
